@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Tense Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Past Tense Quiz</h1>
+            <p class="subtitle">Test your knowledge of regular and irregular verbs!</p>
+        </header>
+
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            
+            <div class="question-counter">
+                <span id="current-question">1</span> of <span id="total-questions">15</span>
+            </div>
+
+            <div class="quiz-content">
+                <div class="question-section">
+                    <h2 id="question-text">Loading question...</h2>
+                    <div class="options" id="options-container">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="next-btn" class="btn btn-primary" disabled>Next Question</button>
+                    <button id="restart-btn" class="btn btn-secondary" style="display: none;">Restart Quiz</button>
+                </div>
+            </div>
+
+            <div class="results" id="results" style="display: none;">
+                <h2>Quiz Complete!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>%
+                    </div>
+                </div>
+                <div class="score-details">
+                    <p>You got <span id="correct-answers">0</span> out of <span id="total-questions-result">15</span> questions correct!</p>
+                    <div class="performance-message" id="performance-message"></div>
+                </div>
+                <div class="mistake-review" id="mistake-review" style="display: none;">
+                    <h3>Review Your Mistakes:</h3>
+                    <div id="mistakes-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Practice makes perfect! Keep learning about past tense verbs.</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
